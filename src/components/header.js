@@ -2,8 +2,17 @@ import React, { Component } from 'react';
 
 class Header extends Component {
 
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      // title: 'The keywords are: ',
+      keywords: ''
+    }
+  }
+  
   inputChange(event) {
-    console.log(event.target.value)
+    this.setState({keywords: event.target.value})
   }
   render() {
     return (
@@ -15,7 +24,7 @@ class Header extends Component {
           Logo
         </div>
         <input 
-          onChange={this.inputChange}
+          onChange={this.inputChange.bind(this)}
         />
       </header>
     );
