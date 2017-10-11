@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: Raleway;
+}
+
+header {
+  background: #03a9f4;
+  text-align: center;
+}
+
+.logo {
+  color: white;
+  font-size: 40px;
+  font-family: Raleway;
+}
+
+header input {
+  font-size: 20px;
+  margin: 20px 0px;
+}
